@@ -1,0 +1,21 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is an application for FilmLandServices",
+    "version" : "v1",
+    "title" : "FilmLand Services",
+    "contact" : {
+      "name" : "Nitin",
+      "url" : "http://abc.com",
+      "email" : "nitin_2312@yahoo.co.in"
+    }
+  },
+  "host" : "abc.com",
+  "basePath" : "/filmland",
+  "schemes" : [ "http" ],
+  "securityDefinitions" : {
+    "JWT" : {
+      "type" : "basic"
+    }
+  }
+}
