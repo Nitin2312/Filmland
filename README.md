@@ -32,3 +32,19 @@ mvn clean install -Pintegration-test
 mvn clean install && java -jar target/FilmApp-0.0.1-SNAPSHOT.jar
 
 
+For running the docker image:-
+1. Run the command  to generate the target jar
+    	mvn clean install
+    	
+2. Run the following command to build the docker image with container name specified
+		 docker build -f DockerFile -t docker-filmland .
+		 
+3. Upon successful completion of the command mentioned above check if the image is created.
+		 docker images
+		 
+4. In order to start the container use the following command.
+	  docker run -p 8085:8080 docker-filmland
+
+
+
+
